@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Mi Página</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Agrega el archivo CSS compilado -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+
+</head>
+<body >
+  <!-- navbar -->
+  <nav class="bg-white   h-28 w-full flex flex-col">
+    <div class="w-full h-[50%] flex justify-center items-center  bg-[#f8aafa]">
+        <p class=" font-bold text-[#37123C] sm:text-[0px]">BLISS</p>
+    </div>
+    <div class="flex flex-row items-center justify-between px-10 sm-px-14 py-3 sm:py-0">
+      <div class="hidden sm:flex w-full sm:w-[50%] text-xl sm:text-3xl font-semibold text-[#37123C] items-center justify-center px-10 py-1">
+        BLISS
+      </div>
+      <ul class=" list-none h-[50%] w-1/2 flex flex-row items-center justify-around  px-10 gap-5">
+        <li class="text-black  hover:text-red-300"><a href="#home">Home</a></li>
+        <li class="text-black  hover:text-red-300"><a href="#about">About</a></li>
+        <li class="text-black  hover:text-red-300"><a href="#partners">Partners</a></li>
+        <li class="text-black  hover:text-red-300"><a href="#contact">Contact</a></li>
+  
+      </ul>
+    </div>
+  </nav>
+
+  <!-- home  -->
+  <section id="home" class="h-[89vh] w-full bg-gradient-to-b from-[#ffdbdb] to-[#cde3ff] flex justify-center items-center flex-col gap-16">
+      <h1 class="flex text-[#37123C] text-xl  font-bold sm:text-3xl md:text-5xl sm:font-semibold ">TOMA EL CONTROL DE TU BELLEZA</h1>
+      <button class=" bg-white rounded-full py-1 sm:py-2 px-8 sm:px-14 md:px-36 opacity-60 text-[#37123C] flex justify-center w-10 sm:w-24 md:w-32 text-[12px] sm:text-xl md:text-2xl hover:opacity-100">Start</button>
+  </section>
+
+  <!-- quienes somos  -->
+  <section id="about" class="h-[100vh] w-full bg-gradient-to-b to-[#ffdbdb] from-[#cde3ff] flex justify-center items-center flex-row gap-16 px-12">
+    <div class="flex w-[60%] p-5 flex-col gap-6">
+      <h2 class=" text-[#F88888] font-bold sm:text-2xl">
+        Quienes somos
+      </h2>
+      <h3 class=" text-xl sm:text-3xl text-[#d8387b]">
+        Bliss te permite elegir, agendar y personalizar tu servicio de cuidado o belleza en un solo lugar
+      </h3>
+    </div>
+    <div class=" h-full w-[40%] bg-black"> 
+    </div>
+  </section>
+
+  <!-- nuestra vision  -->
+  <section class="h-[100vh] w-full bg-gradient-to-b to-[#cde3ff] from-[#ffdbdb] flex justify-center items-center flex-row gap-8 px-12">
+
+    <div class=" flex items-center justify-center w-1/2 bg-white h-full">
+      imagen
+    </div>
+    <div class=" flex items-center justify-center w-1/2 p-6 flex-col gap-5">
+      <h2 class=" self-start text-[#ff8686] font-bold sm:text-2xl">Nuestra Visión</h2>
+      <h3 class="  sm:font-semibold text-[#5b9df3]  text-[20px]  sm:text-4xl">"Potenciar la calidad de servicio y gestión de centros que ofrecen servicios de belleza y cuidado personal"</h3>
+    </div>
+
+
+  </section>
+
+  <!-- Partners  -->
+  <section id="partners" class=" bg-gradient-to-b to-[#ffdbdb] from-[#cde3ff]  h-[55vh] w-full flex justify-center items-center flex-col gap-24 px-12">
+
+    <div class=" px-14 w-full">
+      <h2 class="self-start text-[14px] font-semibold sm:text-[24px] text-zinc-400">Nuestros principales socios</h2>
+    </div>
+    <div class=" flex flex-row  items-center justify-center flex-wrap gap-28">
+      <div class="rounded-full bg-black text-white shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center text-center">SOHO color</div>
+      <div class="rounded-full bg-black text-white shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center text-center">MONTALVO</div>
+      <div class="rounded-full bg-black text-white shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center text-center">artemis</div>
+      <div class="rounded-full bg-black text-white shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center text-center">mi Lucky</div>
+    
+    </div>
+
+
+  </section>
+  <!-- formulario -->
+  <section id="contact" class="h-[100vh] w-full bg-gradient-to-b to-[#cde3ff] from-[#ffdbdb] flex justify-center items-center flex-col gap-8 px-12">
+    <div class="max-w-md w-full bg-white p-8 shadow-lg rounded-lg">
+      <h2 class=" text-[14px] sm:text-2xl font-bold mb-4 text-black">Contact</h2>
+      <form class="space-y-4 flex flex-col ">
+          <label for="name" class="  text-black text-xs sm:font-medium">Nombre</label>
+          <input type="text" id="name" name="name" required
+            class="w-full border border-gray-300 rounded-md py-2 mb-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]">
+        
+        <div>
+          <label for="email" class="block text-black text-xs sm:font-medium mb-2">Correo Electrónico</label>
+          <input type="email" id="email" name="email" required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]">
+        </div>
+        
+        <div>
+          <label for="subject" class="block text-black text-xs sm:font-medium mb-2">Asunto</label>
+          <input type="text" id="subject" name="subject" required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]">
+        </div>
+        
+        <div>
+          <label for="message" class="block text-black text-xs sm:font-medium mb-2">Mensaje</label>
+          <textarea id="message" name="message" rows="4" required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-[#f8a7a7]"></textarea>
+        </div>
+        
+        <div>
+          <button type="submit"
+            class="w-full bg-[#8EBEF7] text-white text-xs sm:font-medium py-2 rounded-md hover:bg-[#f8a7a7] ">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- footer  -->
+  <footer class="bg-slate-300 h-[50vh] w-full flex flex-row justify-between p-12 gap-14">
+    <!-- izq  -->
+    <div class=" w-1/2 flex flex-col justify-between items-start ">
+      <div>
+        <p class=" sm:text-xl font-semibold mb-3">BLISS</p>
+        <p class="font-extralight text-[12px]"> Copyright &copy; 2024. CompanyName. All rights reserved.</p>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-3">
+        <p class=" font-thin text-[14px] sm:text-xl">Une tu marca</p>
+        <div class="flex flex-row space-x-0 h-10 justify-center text-[10px] font-semibold  w-24 sm:w-36 hover:bg-red-700 hover:text-white bg-rose-300 rounded-full items-center">
+         Email address
+        </div>
+      </div>
+    </div>
+
+    <!-- der  -->
+    <div class=" w-1/2 flex flex-col  justify-between mr-36">
+      <!-- arriba  -->
+      <div class=" flex flex-row  gap-5 justify-end">
+        <div class=" flex flex-col gap-1 ">
+          <p class=" font-bold">Sobre nosotros</p>
+          <p class="text-xs sm:text-[16px]">Nuestro equipo</p>
+          <p class="text-xs sm:text-[16px]"">Beneficios</p>
+          <p class="text-xs sm:text-[16px]"">Documentos legales</p>
+          <p class="text-xs sm:text-[16px]"">Carreras</p>
+        </div>
+        <div class=" flex bg-[#37123C]  items-center justify-center w-8 h-8 rounded-full self-start mt-4">
+          <span class="material-symbols-outlined font-light text-white">
+            keyboard_arrow_up
+            </span>
+        </div>
+      </div>
+      
+      <!-- abajo  -->
+      <div class="flex items-center justify-end gap-7">
+          <p><i class="fa-brands fa-facebook-f  sm:text-xl text-[#37123C]"> </i></p>
+          <p><i class="fa-brands fa-twitter  sm:text-xl text-[#37123C]"></i></p>
+          <p><i class="fa-brands fa-instagram  sm:text-xl text-[#37123C]"></i></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

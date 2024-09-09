@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
   <title>BLISS</title>
+  <title>BLISS</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <!-- Agrega el archivo CSS compilado -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -13,82 +14,179 @@
 </head>
 <body >
   <!-- navbar -->
-  <nav class="bg-white   h-28 w-full flex flex-col">
-    <div class="w-full h-[50%] flex justify-center items-center  bg-[#f8aafa]">
-        <p class=" font-bold text-[#37123C] sm:text-[0px]">BLISS</p>
-    </div>
-    <div class="flex flex-row items-center justify-between px-10 sm-px-14 py-3 sm:py-0">
-      <div class="hidden sm:flex w-full sm:w-[50%] text-xl sm:text-3xl font-semibold text-[#37123C] items-center justify-center px-10 py-1">
+  <nav class="bg-white   h-20 w-full flex flex-col sticky top-0 index-50">
+   
+    <div class="h-full flex flex-row items-center justify-between px-10 sm-px-14 py-1 sm:py-0">
+      <div class="hidden sm:flex w-full sm:w-[50%] text-xl sm:text-3xl font-semibold text-[#37123C] items-center justify-start px-10 py-1">
         BLISS
       </div>
-      <ul class=" list-none h-[50%] w-1/2 flex flex-row items-center justify-around  px-10 gap-5">
-        <li class="text-black  hover:text-red-300"><a href="#home">Home</a></li>
-        <li class="text-black  hover:text-red-300"><a href="#about">About</a></li>
-        <li class="text-black  hover:text-red-300"><a href="#partners">Partners</a></li>
-        <li class="text-black  hover:text-red-300"><a href="#contact">Contact</a></li>
+      <ul class=" list-none w-1/2 flex flex-row items-center justify-around  px-10 gap-5">
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#features">Features</a></li>
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#vision">Our Vision</a></li>
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#team">Team</a></li>
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#contact">Contact</a></li>
+        <li class="text-black  hover:text-red-300 bg-gradient-to-r from-[#F88888] to-[#8EBEF7] bg-clip-text text-transparent"><a href="#pricing">Pricing</a></li>
   
       </ul>
     </div>
   </nav>
 
   <!-- home  -->
-  <section id="home" class="h-[89vh] w-full bg-gradient-to-b from-[#ffdbdb] to-[#cde3ff] flex justify-center items-center flex-col gap-16">
-      <h1 class="flex text-[#37123C] text-xl  font-bold sm:text-3xl md:text-5xl sm:font-semibold ">TOMA EL CONTROL DE TU BELLEZA</h1>
-      <button class=" bg-white rounded-full py-1 sm:py-2 px-8 sm:px-14 md:px-36 opacity-60 text-[#37123C] flex justify-center w-10 sm:w-24 md:w-32 text-[12px] sm:text-xl md:text-2xl hover:opacity-100">Start</button>
-  </section>
+  <section id="home" class="h-[89vh] w-full bg-[#CFDCD3] flex justify-center items-center flex-col gap-16">
 
-  <!-- quienes somos  -->
-  <section id="about" class="h-[100vh] w-full bg-gradient-to-b to-[#ffdbdb] from-[#cde3ff] flex justify-center items-center flex-row gap-16 px-12">
-    <div class="flex w-[60%] p-5 flex-col gap-6">
-      <h2 class=" text-[#F88888] font-bold sm:text-2xl">
-        Quienes somos
-      </h2>
-      <h3 class=" text-xl sm:text-3xl text-[#d8387b]">
-        Bliss te permite elegir, agendar y personalizar tu servicio de cuidado o belleza en un solo lugar
-      </h3>
-    </div>
-    <div class=" h-full w-[40%] bg-black"> 
-    </div>
-  </section>
 
-  <!-- nuestra vision  -->
-  <section class="h-[100vh] w-full bg-gradient-to-b to-[#cde3ff] from-[#ffdbdb] flex justify-center items-center flex-row gap-8 px-12">
-
-    <div class=" flex items-center justify-center w-1/2 bg-white h-full">
-      imagen
+    <div class="relative w-full h-full">
+      <!-- Imagen -->
+      <img src="assets/hero.svg" alt="Imagen" class="w-full h-full object-cover">
+    
+      <!-- Texto encima de la imagen -->
+      <div class="absolute inset-0 flex flex-col w-[50%]  items-start justify-center px-20 gap-8">
+        <h1 class="flex text-white text-xl text-start font-bold sm:text-4xl md:text-6xl sm:font-semibold ">EXPERIENCE THE ART OF BEAUTY</h1>
+        <p class="text-white font-light sm:text-2xl">Elige, agenda y personaliza tu servicio de cuidado o belleza en un solo lugar.</p>
+        <button class="bg-white rounded-full py-1 sm:py-2 px-8 sm:px-14 md:px-24 opacity-100 text-white flex  justify-center w-10 sm:w-24 md:w-36 text-[12px] sm:text-xl md:text-2xl bg-gradient-to-b to-[#8EBEF7] from-[#F88888]  hover:ease-in-out hover:duration-300 hover:bg-gradient-to-b hover:from-[#8EBEF7]  hover:to-[#F88888] hover:text-3xl whitespace-nowrap ">START NOW!</button>
+      </div>
+      
     </div>
-    <div class=" flex items-center justify-center w-1/2 p-6 flex-col gap-5">
-      <h2 class=" self-start text-[#ff8686] font-bold sm:text-2xl">Nuestra Visión</h2>
-      <h3 class="  sm:font-semibold text-[#5b9df3]  text-[20px]  sm:text-4xl">"Potenciar la calidad de servicio y gestión de centros que ofrecen servicios de belleza y cuidado personal"</h3>
-    </div>
-
 
   </section>
-
-  <!-- Partners  -->
-  <section id="partners" class=" bg-gradient-to-b to-[#ffdbdb] from-[#cde3ff]  h-[55vh] w-full flex justify-center items-center flex-col gap-24 px-12">
+  
+  <!-- partners   -->
+  <section id="partners" class=" bg-[#ffdbdb] h-[60vh] md:h-[40vh] w-full flex justify-center items-center flex-col gap-14 md:gap-18 px-12 pb-5">
 
     <div class=" px-14 w-full">
-      <h2 class="self-start text-[14px] font-semibold sm:text-[24px] text-zinc-400">Nuestros principales socios</h2>
+      <h2 class="self-center text-[22px] text-center text-[#37123C] font-semibold sm:text-[24px] ">Companies that trust Bliss</h2>
     </div>
-    <div class=" flex flex-row  items-center justify-center flex-wrap gap-28">
-      <div class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center">
-        <img class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center" src="https://scontent.flim25-1.fna.fbcdn.net/v/t39.30808-6/428631541_924562499323289_9040507007119344894_n.jpg?_nc_cat=1&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeG-fD89sI8v0B66MJ1tqUZFqh1_EBukKFmqHX8QG6QoWcmsSYifNPrLt53Add_pkrHmn0rax2p3XDvLdQ4uM2wq&_nc_ohc=1fJqic419AMQ7kNvgG8FNDW&_nc_ht=scontent.flim25-1.fna&oh=00_AYAgRi8CBps8fApJhhUcL7SN487Sdi6JMvPfEn1QPICXbA&oe=66C87BC9"/>
-      </div>
-      <div class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center">
-        <img class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center" src="data:image/png;base64,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"/>
-      </div>
-      <div class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-centerr">
-        <img class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center" src="https://15f8034cdff6595cbfa1-1dd67c28d3aade9d3442ee99310d18bd.ssl.cf3.rackcdn.com/uploaded_thumb_medium/7eeae23173c6e296f50d7633ce024cb6/293676150_101214792673326_2900601514321579049_n.jpg" />
-      </div>
-      <div class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center">
-       <img class="rounded-full bg-black shadow-lg shadow-zinc-900 h-28 w-28 items-center justify-center self-center content-center" src="data:image/jpeg;base64,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"/>
-      </div>
+    <div class=" flex flex-row  items-center justify-center flex-wrap gap-8 md:gap-28 px-12">
+        <img class="rounded-full bg-black shadow-lg shadow-zinc-900 h-18 md:h-28 items-center justify-center self-center content-center  hover:ease-in-out duration-300 hover:md:h-40" src="assets/images/gallery/soho.png"/>
+        <img class="rounded-full bg-white shadow-lg shadow-zinc-900 h-18 md:h-28 items-center justify-center self-center content-center hover:ease-in-out duration-300 hover:md:h-40" src="assets/images/gallery/montalvo.png"/>
+        <img class="rounded-full bg-white shadow-lg shadow-zinc-900 h-18 md:h-28 items-center justify-center self-center content-center hover:ease-in-out duration-300 hover:md:h-40" src="assets/images/gallery/artemis.png" />
+       <img class="rounded-full bg-white shadow-lg shadow-zinc-900 h-18 md:h-28 items-center justify-center self-center content-center hover:ease-in-out duration-300 hover:md:h-40" src="assets/images/gallery/mi-lucky.png"/>
       </div>
 
 
   </section>
-  <!-- formulario -->
+
+
+  <!-- Features  -->
+  <section id="features" class=" bg-white  w-full flex justify-center items-center flex-col gap-24 px-12 pb-10 pt-5">
+
+    <div class=" px-14 w-full mt-4 h-2">
+      <h2 class="self-center text-[14px] text-center text-[#37123C] font-semibold sm:text-[35px] font-thin">Features</h2>
+    </div>
+
+    <div class=" flex flex-row h-full items-center justify-center flex-wrap gap-20 py-2">
+      <div class="flex flex-row items-center flex-nowrap h-8 gap-3">
+        <img src="assets/images/icons/icon1.svg" alt="A heart icon">
+        <div>Customize your beauty service to your liking</div>
+      </div>
+      <div class="flex flex-row  items-center flex-nowrap h-8 gap-3">
+        <img src="assets/images/icons/icon2.svg" alt="A heart icon">
+        <div>Enhance with the reviews of your clients.</div>
+      </div>
+      <div class="flex flex-row  items-center flex-nowrap h-8 gap-3">
+        <img src="assets/images/icons/icon3.svg" alt="A heart icon">
+        <div>Get schedule visualization to improve your sessions.</div>
+      </div>
+      <div class="flex flex-row  items-center flex-nowrap h-8 gap-3">
+        <img src="assets/images/icons/icon4.svg" alt="A heart icon">
+        <div>Access to an easy-to-use payment system.</div>
+      </div>
+      <div class="flex flex-row  items-center flex-nowrap h-8 gap-3">
+        <img src="assets/images/icons/icon5.svg" alt="A heart icon">
+        <div>Control your personalization limits and staff.</div>
+      </div>
+
+
+    </div>
+
+  </section>
+
+  
+
+  <!-- Our Vision  -->
+  <section id="vision" class=" h-auto py-10 md:h-[80vh] w-full bg-[#ffdbdb]  flex justify-center items-center flex-col  md:flex-row gap-5 md:gap-16  px-2 md:px-20">
+    <div class=" flex self-center items-center justify-center text-center  h-auto w-[40%]  rounded-md"> 
+      <img src="assets/images/gallery/vision.png"  class=" w-auto h-auto shadow-lg shadow-black-900" alt="A stylist washing her client's hair.">
+    </div>
+    <div class="flex w-[50%] md:p-5 flex-col gap-6 md:px-20">
+      <h2 class=" text-[#37123C] font-bold text-center md:text-start text-xl md:text-3xl">
+        Our vision
+      </h2>
+      <h3 class=" text-[18px] md:text-3xl text-[#d8387b] text-center ">
+        "Enhancing the quality of service and management of centers offering beauty and personal care services"
+      </h3>
+    </div>
+    
+  </section>
+
+  <!-- developers  -->
+
+  <section id="team" class=" h-auto py-10 md:h-[80vh] w-full bg-white flex justify-center items-center flex-col gap-10 px-16">
+
+    <h1 class="text-[#37123C] text-4xl font-thin">
+      Developers
+    </h1>
+    <div class="flex flex-col md:flex-row  gap-12">
+
+
+      <div class="w-full  rounded-lg p-12 bg-white flex flex-col justify-center items-center border shadow-purple-300 shadow-lg  ">
+        <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-36 w-36" src="assets/images/gallery/devs/rodriguez.jpg" alt="profile photo">
+        </div>
+        <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Elvia Rodriguez</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+        </div>
+      </div>
+
+      <div class="w-full  rounded-lg p-12 bg-white flex flex-col justify-center items-center  border shadow-blue-300 shadow-lg">
+  
+        <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-36 w-36" src="assets/images/gallery/devs/soriano.jpg" alt="profile photo">
+        </div>
+        <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Diego Soriano</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+        </div>
+      </div>
+      <div class="w-full  rounded-lg p-12 bg-white flex flex-col justify-center items-center  border shadow-red-300 shadow-lg">
+
+        <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-36 w-36" src="assets/images/gallery/devs/cabrera.png" alt="profile photo">
+        </div>
+        <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">Diego Cabrera</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+        </div>
+      </div>
+      <div class="w-full  rounded-lg p-12 bg-white flex flex-col justify-center items-center  border shadow-orange-300 shadow-lg">
+
+        <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-36 w-36" src="assets/images/gallery/devs/rivas.jpg" alt="profile photo">
+        </div>
+        <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">David Rivas</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+        </div>
+      </div>
+      <div class="w-full  rounded-lg p-12 bg-white flex flex-col justify-center items-center border shadow-green-300 shadow-lg ">
+
+        <div class="mb-8">
+            <img class="object-center object-cover rounded-full h-36 w-36 " src="assets/images/gallery/devs/bernaola.JPG" alt="profile photo">
+        </div>
+        <div class="text-center">
+            <p class="text-xl text-gray-700 font-bold mb-2">André Bernaola</p>
+            <p class="text-base text-gray-400 font-normal">Software Engineer</p>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+
+
+  <!-- contact  -->
+   
   <section id="contact" class="h-[100vh] w-full bg-gradient-to-b to-[#cde3ff] from-[#ffdbdb] flex justify-center items-center flex-col gap-8 px-12">
     <div class="max-w-md w-full bg-white p-8 shadow-lg rounded-lg">
       <h2 class=" text-[14px] sm:text-2xl font-bold mb-4 text-black">Contact</h2>
@@ -124,8 +222,69 @@
       </form>
     </div>
   </section>
+
+  <!-- pricing -->
+ 
+<section id="pricing" class="h-auto md:h-[70vh] w-full bg-white flex justify-center items-center flex-col  gap-20 py-10 px-12 flex-wrap md:flex-nowrap">
+
+  <p class=" text-purple-800 font-thin text-3xl">Pricing</p>
+  <div class="flex flex-row flex-wrap justify-center items-center gap-32">
+ 
+
+  <div class="flex flex-col items-center bg-orange-300 rounded-lg shadow-md p-6 w-60">
+    <p class="font-bold text-3xl text-orange-700 mb-2">Basic</p>
+    <span class="font-semibold text-xl text-white bg-orange-600 px-2 py-1 rounded-full mb-4">$1 / Month</span>
+    <ul class="flex flex-col items-center gap-2 text-sm font-light text-gray-700">
+      <li class="flex items-center gap-2">
+       
+        Core Features
+      </li>
+      <li class="flex items-center gap-2">
+        
+        Monthly Support
+      </li>
+      <li class="flex items-center gap-2">
+        
+        Up to 5 members
+      </li>
+    </ul>
+    <button class="mt-4 border border-orange-700 bg-orange-600 text-white px-4 py-2 rounded-md hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-orange-500">
+      Choose plan
+    </button>
+  </div>
+
+  <div class="flex flex-col items-center bg-purple-300 rounded-lg shadow-md p-6 w-60">
+    <p class="font-bold text-4xl text-purple-800 mb-2">Elite</p>
+    <span class="font-semibold text-xl text-white bg-purple-600 px-2 py-1 rounded-full mb-4">$7 / Month</span>
+    <ul class="flex flex-col items-center gap-2 text-sm font-light text-gray-700">
+      <li class="flex items-center gap-2">All features</li>
+      <li class="flex items-center gap-2">24/7 Support</li>
+      <li class="flex items-center gap-2">Up to 50+ members</li>
+    </ul>
+    <button class="mt-4 border border-purple-700 bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500">Choose plan</button>
+  </div>
+
+  <div class="flex flex-col items-center bg-fuchsia-300 rounded-lg shadow-md p-6 w-60">
+    <p class="font-bold text-3xl text-fuchsia-800 mb-2">Gorgeus</p>
+    <span class="font-semibold text-xl text-white bg-fuchsia-600 px-2 py-1 rounded-full mb-4">$5 / Month</span>
+    <ul class="flex flex-col items-center gap-2 text-sm font-light text-gray-700">
+      <li class="flex items-center gap-2">All features</li>
+      <li class="flex items-center gap-2">Daily Support</li>
+      <li class="flex items-center gap-2">Up to 20 members</li>
+    </ul>
+    <button class="mt-4 border border-fuchsia-700 bg-fuchsia-600 text-white px-4 py-2 rounded-md hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-500">Choose plan</button>
+  </div>
+
+  
+  </div>
+  
+</section>
+
+
+
+  
   <!-- footer  -->
-  <footer class="bg-slate-300 h-[50vh] w-full flex flex-row justify-between p-12 gap-14">
+  <footer class="bg-[#cde3ff] h-[50vh] w-full flex flex-row justify-between p-12 px-32 gap-14">
     <!-- izq  -->
     <div class=" w-1/2 flex flex-col justify-between items-start ">
       <div>
